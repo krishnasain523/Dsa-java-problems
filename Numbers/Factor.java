@@ -7,7 +7,6 @@ import java.util.Scanner;
 // Find all factors of a Natural Number in sorted order
 //   day 2
 public class Factor {
-
     public static void checkfactor(int n) {
         List<Integer> small = new ArrayList<>();
         List<Integer> large = new ArrayList<>();
@@ -27,7 +26,6 @@ public class Factor {
             System.out.print(large.get(i) + " ");
         }
     }
-
     public static void main(String[] args) {
         System.out.println("enter natural number");
         Scanner sc = new Scanner(System.in);
