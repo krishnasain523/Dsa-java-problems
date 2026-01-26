@@ -1,3 +1,7 @@
+// problem nth fibonacci number
+// plateform geeks for geeks
+
+
 package Numbers;
 
 import java.util.Scanner;
@@ -17,14 +21,18 @@ public class fibonacci {
         return series(n-1)+series(n-2);
 
     }
+
 public static void main(String[] args) {
-           System.out.println("enter tern");
+           System.out.println("enter pos");
         Scanner sc= new Scanner(System.in);
-        int n=sc.nextInt();
+        int n=6;
+        int pos=sc.nextInt();
+        int arr[]=new int[n];
         for(int i=0; i<n; i++)
         {
-            System.out.print(series(i)+" ");
+         arr[i]=series(i);
         }
+        System.out.println(arr[pos-1]+" "+"is the "+pos+"th"+" "+"num of fibonacci series" );
    
 }
 }
